@@ -1,12 +1,16 @@
-import React from "react";
-import "./CarteFilm.css";
+import React from 'react';
+import './CarteFilm.css';
 
-function CarteFilm({ movie }) {
+function CarteFilm({ title, posterPath, rating }) {
+    const posterUrl = posterPath
+        ? `https://image.tmdb.org/t/p/w500${posterPath}`
+        : 'https://via.placeholder.com/500x750?text=No+Image';
+
     return (
         <div className="carte-film">
-            <img src={movie.poster} alt={movie.title} />
-            <h3>{movie.title}</h3>
-            <p>Note : {movie.rating}%</p>
+            <img src={posterUrl} alt={title} />
+            <h3>{title}</h3>
+            <p>Note : {rating}</p>
         </div>
     );
 }
