@@ -1,7 +1,15 @@
 import React from "react";
+import "./Home.css";
+import Banniere from "../components/Banniere/Banniere";
+import ListeFilm from "../components/ListeFilm/ListeFilm";
 
 function Home() {
-    return <h1>Page d'accueil</h1>;
+    return (
+        <div className="home-container">
+            <Banniere />
+            <ListeFilm />
+        </div>
+    );
 }
 
 export default Home;
