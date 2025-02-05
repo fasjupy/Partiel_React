@@ -1,16 +1,23 @@
 import React from "react";
-import "./Navbar.css";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
+import camLogo from "../../assets/cam-logo.svg";
 
-function Navbar() {
+function NavBar() {
     return (
         <nav className="navbar">
-            <ul>
-                <li>Films</li>
-                <li>Séries</li>
-                <li>Populaires</li>
+            <div className="logo">
+                <Link to="/">
+                    <img src={camLogo} alt="Logo" className="nav-logo" />
+                </Link>
+            </div>
+            <ul className="nav-links">
+                <li><Link to="/">Films</Link></li>
+                <li><span>Séries</span></li>
+                <li><span>Populaires</span></li>
             </ul>
         </nav>
     );
 }
 
-export default Navbar;
+export default NavBar;

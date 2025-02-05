@@ -1,20 +1,40 @@
 .navbar {
+    background-color: #032541; /* Dark blue */
+    padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
-    height: 70px;
-    background-color: #032541;
     align-items: center;
-    padding: 0px 40px;
+    justify-content: space-between;
 }
 
-.navbar ul {
-    display: flex;
+.nav-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0 3px white);
+}
+
+.nav-links {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.navbar ul li {
-    margin-left: 20px;
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a, .nav-links span {
+    text-decoration: none;
     color: white;
-    cursor: pointer;
     font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-links a:hover, .nav-links span:hover {
+    text-decoration: underline;
+}
+
+.nav-links a:visited {
+    color: white;
 }

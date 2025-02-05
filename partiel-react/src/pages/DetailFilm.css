@@ -1,0 +1,128 @@
+.detail-film {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+
+.detail-banner {
+    position: relative;
+    width: 100%;
+    max-height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+
+.detail-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.detail-film-content {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: -100px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.movie-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.movie-poster {
+    width: 220px;
+    max-height: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.movie-info {
+    flex: 1;
+    text-align: left;
+    color: white;
+}
+
+.rating {
+    display: inline-block;
+    background-color: #032541;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.movie-info h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.movie-info p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.movie-info h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.casting {
+    margin-top: 50px;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.casting h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.cast-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.cast-member {
+    text-align: center;
+}
+
+.cast-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.cast-member p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}

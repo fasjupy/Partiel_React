@@ -1,6 +1,6 @@
-import React from 'react';
-import CarteFilm from '../CarteFilm/CarteFilm';
-import './ListeFilm.css';
+import React from "react";
+import CarteFilm from "../CarteFilm/CarteFilm";
+import "./ListeFilm.css";
 
 function ListeFilm({ movies }) {
     return (
@@ -10,6 +10,7 @@ function ListeFilm({ movies }) {
                 {movies.map((movie) => (
                     <CarteFilm
                         key={movie.id}
+                        id={movie.id}
                         title={movie.title}
                         posterPath={movie.poster_path}
                         rating={movie.vote_average}
